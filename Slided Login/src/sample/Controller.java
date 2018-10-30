@@ -1,15 +1,12 @@
 package sample;
 
-import java.net.URL;
-import java.util.ResourceBundle;
-
 import javafx.animation.FadeTransition;
 import javafx.fxml.FXML;
-import javafx.fxml.Initializable;
 import javafx.scene.layout.Pane;
 import javafx.util.Duration;
 
-public class Controller implements Initializable {
+
+public class Controller {
 
 	@FXML
 	private Pane pane1;
@@ -22,9 +19,15 @@ public class Controller implements Initializable {
 
 	@FXML
 	private Pane pane4;
+	
+//	@FXML
+//	private URL location;
+//	
+//	@FXML
+//	private ResourceBundle resources;
+	
 
-	@Override
-	public void initialize(URL location, ResourceBundle resources) {
+	public void initialize() {
 
 		pane1.setStyle("-fx-background-image: url('sample/1.jpg')");
 		pane2.setStyle("-fx-background-image: url('sample/2.jpg')");

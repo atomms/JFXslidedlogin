@@ -5,6 +5,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
+import javafx.stage.StageStyle;
 
 public class Main extends Application {
 
@@ -16,7 +17,9 @@ public class Main extends Application {
 		AnchorPane pane = loader.load();
 		Scene scene = new Scene(pane);
 		primaryStage.setScene(scene);
-		primaryStage.show();
+		// primaryStage.setResizable(false);
+		primaryStage.initStyle(StageStyle.UNDECORATED);
+		primaryStage.show(); 
 
 	}
 
